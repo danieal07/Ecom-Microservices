@@ -2,11 +2,7 @@ package com.ecommerce.order.service;
 
 import com.ecommerce.order.dto.CartItemRequest;
 import com.ecommerce.order.model.CartItem;
-import com.ecommerce.ecomproduct.model.Product;
-import com.ecommerce.ecomuser.model.User;
 import com.ecommerce.order.repository.CartItemRepository;
-import com.ecommerce.ecomproduct.repository.ProductRepository;
-import com.ecommerce.ecomuser.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

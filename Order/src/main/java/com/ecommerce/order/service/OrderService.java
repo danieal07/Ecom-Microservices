@@ -18,7 +18,7 @@ public class OrderService {
     //private final UserRepository userRepository;
     private final OrderRepository orderRepository;
 
-    public Optional<OrderResponse> createOrder(Long userId) {
+    public Optional<OrderResponse> createOrder(Long userId){
         // Validate for cart items
         List<CartItem> cartItems = cartService.getCart(userId);
         if (cartItems.isEmpty()) {
@@ -34,7 +34,7 @@ public class OrderService {
 
         // Calculate total price
         BigDecimal totalPrice = cartItems.stream()
-                .map(CartItem::getPrice)
+                .map(item -> item.getPrice().multiply(BigDecimal.valueOf(item.getQuantity())))
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
 
         // Create order

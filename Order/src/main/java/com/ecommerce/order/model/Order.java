@@ -22,6 +22,7 @@ public class Order {
 
     private Long userId;
 
+
     private BigDecimal totalAmount;
 
     @Enumerated(EnumType.STRING)
