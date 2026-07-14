@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config_server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/danieal07/Cloud_Config_demo
+
+server:
+  port: 8888
+
+
+
+
+

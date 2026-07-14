@@ -6,5 +6,8 @@ spring:
     uri: mongodb://localhost/userdb
     database: userdb
 
+  config:
+
+
 server:
   port: 8082

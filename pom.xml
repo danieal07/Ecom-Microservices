@@ -13,5 +13,6 @@
         <module>Order</module>
         <module>product</module>
         <module>user</module>
+        <module>config_server</module>
     </modules>
 </project>
